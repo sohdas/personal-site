@@ -1,13 +1,130 @@
+/* General CSS */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 3px;
+  color: white;
+  background-color: rgb(20, 20, 20);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Background classes */
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Text classes */
+.title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.description {
+  font-size: 38px;
+}
+
+/* Scroll snapping */
+.snap {
+  scroll-snap-type: y mandatory;
+  page-break-after: always;
+}
+.snap > br {
+  scroll-snap-align: start;
+}
+/* Navbar */
+.nav-item {
+  padding: 20px 20px 20px 20px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+  transition: color .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out;
+}
+
+.nav-link:hover {
+  outline: 2px solid white;
+  -webkit-animation: cycle 0.2s infinite;
+  animation: cycle 0.2s infinite;
+}
+
+@-webkit-keyframes cycle {
+  0%, 100% { color: rgb(67, 67, 255); }
+  16%      { color: rgb(43, 255, 209); }
+  32%      { color: rgb(187, 250, 70); }
+  48%      { color: rgb(255, 251, 6); }
+  64%      { color: rgb(255, 119, 8); }
+  80%      { color: rgb(255, 6, 172); }
+}
+@keyframes cycle {
+  0%, 100% { color: rgb(67, 67, 255); }
+  16%      { color: rgb(43, 255, 209); }
+  32%      { color: rgb(187, 250, 70); }
+  48%      { color: rgb(255, 251, 6); }
+  64%      { color: rgb(255, 119, 8); }
+  80%      { color: rgb(255, 6, 172); }
+}
+/* Typewriter CSS */
+.typewriter h1 {
+    letter-spacing: normal;
+    font-family: Consolas;
+    justify-items: end;
+    border-right: solid white 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 19em;
+    opacity: 0;
+    -webkit-animation: type 1s steps(15, end), blink .5s step-end infinite alternate;
+    animation: type 1s steps(15, end), blink .5s step-end infinite alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
