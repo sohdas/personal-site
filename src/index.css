@@ -59,26 +59,8 @@ code {
 
 .nav-link:hover {
   outline: 2px solid white;
-  -webkit-animation: cycle 0.2s infinite;
-  animation: cycle 0.2s infinite;
 }
 
-@-webkit-keyframes cycle {
-  0%, 100% { color: rgb(67, 67, 255); }
-  16%      { color: rgb(43, 255, 209); }
-  32%      { color: rgb(187, 250, 70); }
-  48%      { color: rgb(255, 251, 6); }
-  64%      { color: rgb(255, 119, 8); }
-  80%      { color: rgb(255, 6, 172); }
-}
-@keyframes cycle {
-  0%, 100% { color: rgb(67, 67, 255); }
-  16%      { color: rgb(43, 255, 209); }
-  32%      { color: rgb(187, 250, 70); }
-  48%      { color: rgb(255, 251, 6); }
-  64%      { color: rgb(255, 119, 8); }
-  80%      { color: rgb(255, 6, 172); }
-}
 /* Typewriter CSS */
 .typewriter h1 {
     letter-spacing: normal;
