@@ -9,7 +9,7 @@ const Projects = () => {
             </div>
             <div class ="row">
                 <div class="img">
-                    <img src="%PUBLIC_URL%/ai.png" width="150"/>
+                    <img src="%PUBLIC_URL%/ai.png" alt="" width="150"/>
                 </div>
                 <div class ="description">
                     I made the website for the University of Wisconsin-Madison's Artificial Intelligence Club.
