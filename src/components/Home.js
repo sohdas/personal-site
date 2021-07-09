@@ -9,10 +9,10 @@ const Home = () => {
             </div>
             <div class ="row">
                 <div class ="description">
-                I am a junior at UW-Madison, studying computer science and math.
+                I'm a senior at UW-Madison, studying computer science and math.
                 I have experience in web development and object-oriented programming in professional, academic, and personal contexts.
-                In my free time, I like to read books, play pick-up soccer, and listen to ambient music. 
-                Shoot me an email if you want to talk! 
+                In my free time, I like to read books, bike, and mess around on my guitar. 
+                Shoot me an email if you want to talk!
                 </div>
             </div>
         </div>
