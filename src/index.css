@@ -34,7 +34,7 @@ code {
 }
 
 .description {
-  font-size: 38px;
+  font-size: 32px;
 }
 
 /* Scroll snapping */
@@ -54,9 +54,11 @@ code {
   color: white;
   font-weight: 600;
   transition: .2s ease-in-out;
+  border-bottom: 2px solid rgb(0,0,0,0);
 }
 
 .nav-link:hover {
+  color: white;
   border-bottom: 2px solid white;
   transition: ease-in-out .2s;
 }
