@@ -53,8 +53,8 @@ code {
 .nav-link {
   color: white;
   font-weight: 600;
-  transition: .2s ease-in-out;
   border-bottom: 2px solid rgb(0,0,0,0);
+  transition: ease-in-out .2s;
 }
 
 .nav-link:hover {
@@ -109,6 +109,6 @@ code {
   }
   @-webkit-keyframes blink {
     50% {
-      border-color: tranparent;
+      border-color: transparent;
     }
   }
