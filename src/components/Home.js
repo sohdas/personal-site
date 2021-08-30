@@ -14,7 +14,7 @@ const Home = () => {
                 <Grid item xs>
                     <div className ="description">
                         I'm a senior at UW-Madison studying computer science and math.
-                        I have experience in web development and object-oriented programming in professional, academic, and personal contexts.
+                        I have experience in software development in professional, academic, and personal contexts.
                         In my free time, I like to read books, bike, and mess around on my guitar. 
                         Shoot me an email if you want to talk!
                     </div>
